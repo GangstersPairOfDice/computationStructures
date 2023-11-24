@@ -1,6 +1,6 @@
 # note, this only works because of a correct encoding system with no bit overlaps
 
-def encode(msg, encodeSystem):
+def encode(msg, encodingSystem):
 
     encodedMessage = [encodingSystem.get(char, char) for char in msg]
     return ''.join(encodedMessage)
